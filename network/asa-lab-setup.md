@@ -58,3 +58,15 @@ interface GigabitEthernet1/8.30
  ip address 192.168.30.1 255.255.255.0
  security-level 100
  no shutdown
+
+🔁 NAT Configuration
+object network obj_any
+ subnet 0.0.0.0 0.0.0.0
+ nat (SERVERS,outside) dynamic interface
+ nat (USERS,outside) dynamic interface
+ nat (PHONES,outside) dynamic interface
+
+✅ Status Checklist
+ Outside IP via DHCP from AT&T
+ ASA VLAN subinterfaces up and reachable
+ NAT configured for each VLAN
