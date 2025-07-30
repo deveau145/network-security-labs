@@ -1,3 +1,4 @@
-# VM Environment Setup
-Placeholder — document Hyper-V or Proxmox layout and resource plan
+# Snapshot Strategy
+Placeholder — keep notes on backups, rollback plans, and timing
+
 
